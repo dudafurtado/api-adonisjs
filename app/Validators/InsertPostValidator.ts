@@ -23,7 +23,11 @@ export default class InsertPostValidator {
    *     ])
    *    ```
    */
-  public schema = schema.create({})
+  public schema = schema.create({
+    title: schema.string(),
+    description: schema.string(),
+    likes: schema.number()
+  })
 
   /**
    * Custom messages for validation failures. You can make use of dot notation `(.)`

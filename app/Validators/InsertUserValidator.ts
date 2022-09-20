@@ -23,7 +23,12 @@ export default class InsertUserValidator {
    *     ])
    *    ```
    */
-  public schema = schema.create({})
+  public schema = schema.create({
+    name: schema.string(),
+    profession: schema.string(),
+    energy: schema.number(),
+    favority_number: schema.number()
+  })
 
   /**
    * Custom messages for validation failures. You can make use of dot notation `(.)`
