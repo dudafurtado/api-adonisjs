@@ -25,9 +25,9 @@ export default class InsertUserValidator {
    */
   public schema = schema.create({
     name: schema.string(),
-    profession: schema.string(),
+    profission: schema.string(),
     energy: schema.number(),
-    favority_number: schema.number()
+    favorite_number: schema.number()
   })
 
   /**

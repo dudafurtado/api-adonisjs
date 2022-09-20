@@ -52,7 +52,7 @@ export default class PostsController {
     }
   }
 
-  public async delete ({ response, params }: HttpContextContract) {
+  public async destroy ({ response, params }: HttpContextContract) {
     const { id } = params
     try {
       const post = Post.findOrFail(id)

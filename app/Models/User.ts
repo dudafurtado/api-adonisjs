@@ -9,13 +9,13 @@ export default class User extends BaseModel {
   public name: string
 
   @column()
-  public profession: string
+  public profission: string
 
   @column()
   public energy: number
 
   @column()
-  public favority_number: number
+  public favorite_number: number
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
