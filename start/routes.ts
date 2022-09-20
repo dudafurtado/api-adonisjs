@@ -6,8 +6,10 @@ Route.get('/', async () => {
 
 Route.resource('/user', 'UsersController').apiOnly()
 
-Route.get('/post', 'PostsController.index')
-Route.post('/post', 'PostsController.store')
-Route.get('/post/:id', 'PostsController.show')
-Route.patch('/post/:id', 'PostsController.update')
-Route.delete('/post/:id', 'PostsController.destroy')
+Route.group(() => {
+  Route.get('/post', 'PostsController.index')
+  Route.post('/post', 'PostsController.store')
+  Route.get('/post/:id', 'PostsController.show')
+  Route.patch('/post/:id', 'PostsController.update')
+  Route.delete('/post/:id', 'PostsController.destroy')
+}).middleware('auth')

@@ -1,9 +1,8 @@
 # API with AdonisJS
-# Let's create a CRUD of user and post to exercise
+## Let's create a CRUD of user and post to exercise
 
 Inspired by: 
 https://github.com/sinonsrt/crud-node-adonisjs
-https://github.com/harizinside/AdonisJS-CRUD-API
 https://github.com/RafaLopesMelo/CRUD-AdonisJS-Preview-5
 https://www.section.io/engineering-education/build-a-restful-api-with-adonisjs/
 
@@ -31,3 +30,16 @@ name.string()
 
 `npm run build`  
 `npm run dev`
+
+## Auth
+https://github.com/harizinside/AdonisJS-CRUD-API
+
+`npm i @adonisjs/auth`
+
+`node ace make:controller auth`
+`node ace make:model Auth` 
+`node ace make:migration auth`
+`node ace make:validator Auth`
+
+**Hashing**
+`npm install phc-argon2`
